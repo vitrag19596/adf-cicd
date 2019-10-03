@@ -1,0 +1,24 @@
+{
+	"name": "SampleTrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "GetMetadataToForEach",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/foreachloopcopy/blobs/dataset/",
+			"blobPathEndsWith": ".txt",
+			"scope": "/subscriptions/aac6a507-4966-4f00-8faa-66aca2973867/resourceGroups/ETLTraining/providers/Microsoft.Storage/storageAccounts/vitragsa",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
