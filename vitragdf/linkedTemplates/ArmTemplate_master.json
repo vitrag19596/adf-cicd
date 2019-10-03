@@ -7,13 +7,13 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "vitragdf"
 		},
-		"CopyMetadataFromContainer_connectionString": {
+		"AzureBlobStorage1_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'CopyMetadataFromContainer'"
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
 		},
-		"SampleTrigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/aac6a507-4966-4f00-8faa-66aca2973867/resourceGroups/ETLTraining/providers/Microsoft.Storage/storageAccounts/vitragsa"
+		"SQLDBVitrag_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'SQLDBVitrag'"
 		},
 		"containerUri": {
 			"type": "string",
@@ -42,11 +42,11 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"CopyMetadataFromContainer_connectionString": {
-						"value": "[parameters('CopyMetadataFromContainer_connectionString')]"
+					"AzureBlobStorage1_connectionString": {
+						"value": "[parameters('AzureBlobStorage1_connectionString')]"
 					},
-					"SampleTrigger_properties_typeProperties_scope": {
-						"value": "[parameters('SampleTrigger_properties_typeProperties_scope')]"
+					"SQLDBVitrag_connectionString": {
+						"value": "[parameters('SQLDBVitrag_connectionString')]"
 					}
 				}
 			},

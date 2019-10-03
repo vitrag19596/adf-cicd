@@ -5,11 +5,11 @@
 		"factoryName": {
 			"value": "vitragdf"
 		},
-		"CopyMetadataFromContainer_connectionString": {
+		"AzureBlobStorage1_connectionString": {
 			"value": ""
 		},
-		"SampleTrigger_properties_typeProperties_scope": {
-			"value": "/subscriptions/aac6a507-4966-4f00-8faa-66aca2973867/resourceGroups/ETLTraining/providers/Microsoft.Storage/storageAccounts/vitragsa"
+		"SQLDBVitrag_connectionString": {
+			"value": ""
 		}
 	}
 }
