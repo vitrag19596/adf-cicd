@@ -1,0 +1,16 @@
+{
+	"name": "VitragDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLDBVitrag",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "vitragcustomer"
+		}
+	}
+}
